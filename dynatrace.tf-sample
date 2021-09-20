@@ -1,0 +1,10 @@
+provider "dynatrace" {
+    dt_env_url   = "ENV_URL"
+    dt_api_token = "API_TOKEN"
+}    
+
+provider "dynatrace" {
+    alias = "prod"
+    dt_env_url   = "PROD_ENV_URL"
+    dt_api_token = "PROD_API_TOKEN"
+}    
